@@ -4,3 +4,11 @@
     box-sizing: border-box;
 }
 
+body{
+    background-image: linear-gradient(to right, rgb(28, 26, 196), rgb(72, 8, 155));
+}
+
+#sobreNos
+{
+    background: rgb(255, 255, 255);
+}
