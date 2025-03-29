@@ -5,10 +5,14 @@
 }
 
 body{
-    background-image: linear-gradient(to right, rgb(28, 26, 196), rgb(72, 8, 155));
+    background-image:url(../imagens/tentativa.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 #sobreNos
 {
-    background: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
 }

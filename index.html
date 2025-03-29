@@ -30,17 +30,45 @@
     </nav>
     
     <header class="container text-center my-5">
-        <img src="" class="rounded-circle img-fluid" alt="Logo da Empresa" style="max-width: 150px;">
-        
+     
+       
     </header>
+   
+    <div id="carrrossel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carrossel" data-slide-to="0" class="active"></li>
+          <li data-target="#carrossel" data-slide-to="1"></li>
+          <li data-target="#carrossel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-90 p-4" src="./src/imagens/teste.jpg?text=Primeiro+Slide" alt="Primeiro Slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-90 p-4" src="./src/imagens/teste2.jpg?text=Segundo+Slide" alt="Segundo Slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-90 p-4" src="./src/imagens/teste3.jpg?text=Terceiro+Slide"  alt="Terceiro Slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carrossel" role="button" onclick="Anterior()" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carrossel" role="button"  onclick="Proximo()" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Próximo</span>
+        </a>
+      </div>
+   
+
     <div class="container">
         <section id="sobreNos text-center my-5">
            <h3 class="sobreNos text-white"  >Sobre Nós</h3>
-           <p class="sobreNos fw-bold text-white">A [Nome] foi fundada em 2025 com a missão de proporcionar experiências autênticas e exclusivas pelo Brasil. Inspirada no conceito de alcançar o auge das viagens, a empresa se especializou em roteiros inovadores, explorando tanto destinos famosos quanto lugares pouco conhecidos, sempre valorizando a cultura local e o ecoturismo.</p>
-           <p class="sobreNos fw-bold text-white">Desde o início, a [Nome] se destacou pela qualidade e personalização de seus serviços, garantindo viagens inesquecíveis e sustentáveis. Seu compromisso com a excelência rapidamente a tornou uma referência no turismo nacional.</p>
-           </p>
-           <p class="sobreNos fw-bold text-white">Desde o início, a [Nome] se destacou pela qualidade e personalização de seus serviços, garantindo viagens inesquecíveis e sustentáveis. Seu compromisso com a excelência rapidamente a tornou uma referência no turismo nacional.</p>
-        </p>
+            <ul class="d-flex gap-3 p-0 ">
+              <p class="sobreNos fw-bold text-white bg-primary bg-opacity-50 p-4 border border-primary rounded-4">A [Nome] foi fundada em 2025 com a missão de proporcionar experiências autênticas e exclusivas pelo Brasil. Inspirada no conceito de alcançar o auge das viagens, a empresa se especializou em roteiros inovadores, explorando tanto destinos famosos quanto lugares pouco conhecidos, sempre valorizando a cultura local e o ecoturismo.</p>
+              <p class="sobreNos fw-bold text-white bg-info bg-opacity-50 p-4 border border-primary rounded-4">Desde o início, a [Nome] se destacou pela qualidade e personalização de seus serviços, garantindo viagens inesquecíveis e sustentáveis. Seu compromisso com a excelência rapidamente a tornou uma referência no turismo nacional.</p>
+            </ul>
         </section>
     
     </div>
