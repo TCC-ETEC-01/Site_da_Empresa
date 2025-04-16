@@ -16,3 +16,49 @@ body{
     animation: move 3s linear infinite;
     margin-top: 1rem;
   }
+
+  .sidebar2 .navbar2 {
+    visibility: hidden;
+}
+
+.sidebar2 .navbar2 ul {
+    list-style: none !important; 
+  
+}
+
+/* Estilização dos botões circulares */
+.sidebar2 .navbar2 ul li  {
+    margin: 10px 0 !important; /* Espaçamento entre os ícones */
+    margin-left: -10px !important;
+}
+
+.sidebar2 .navbar2 ul li a {
+    width: 40px !important;
+    height: 40px !important;
+    background: #D3D3D3 !important; /* Cor do fundo do círculo */
+    color: #2E2E3A !important; /* Cor do ícone */
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 22px !important;
+    transition: 0.3s !important;
+    text-decoration: none !important;
+}
+
+/* Efeito ao passar o mouse */
+.sidebar2 .navbar2 ul li a:hover {
+    background: #B0B0B0 !important;
+}
+.sidebar2 {
+    position: fixed;
+}
+
+@media (min-width: 975px) {
+    button {
+        visibility:hidden;
+    }
+    .sidebar2 .navbar2 {
+        visibility: visible;
+    }
+}
