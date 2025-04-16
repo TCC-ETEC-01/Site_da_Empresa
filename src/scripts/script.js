@@ -13,3 +13,28 @@ carouselImages.addEventListener('slide.bs.carousel', function (e) {
 carouselText.addEventListener('slide.bs.carousel', function (e) {
   bsCarouselImages.to(e.to);
 });
+
+
+// menu equipe click
+const avatares = document.querySelectorAll('.avatar');
+
+  avatares.forEach(avatar => {
+    avatar.addEventListener('click', () => {
+      const membro = avatar.parentElement;
+      const info = membro.querySelector('.info-membro');
+
+  
+      document.querySelectorAll('.info-membro').forEach(el => {
+        if (el !== info) {
+          el.style.visibility = 'collapse';
+        }
+      });
+
+    
+      if (info.style.visibility === 'visible') {
+        info.style.visibility = 'collapse';
+      } else {
+        info.style.visibility = 'visible';
+      }
+    });
+  });
