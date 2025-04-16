@@ -8,6 +8,10 @@ body{
     background: linear-gradient(to right, #2b0eb4, #620280);
 }
 
+.mb-4{
+    text-align: center;
+} 
+
 .linha-neon {
     width: 100%;
     height: 4px; 
@@ -62,3 +66,70 @@ body{
         visibility: visible;
     }
 }
+
+.equipe {
+    background-color: #0959da;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
+    gap: 30px;
+    border-radius: 10px;
+    width: 90%;
+    margin: 80px auto;
+}
+
+.membro {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-membro {
+    background: #ffffff;
+    text-align: center;
+    border-radius: 15px;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    visibility: collapse;
+    font-weight: bold;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    background-color: #b0adad;
+    border-radius: 50%;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+   .av1 /*Gabriel*/ {
+    
+    background-image: url('/src/assets/2.webp');
+  }
+  .av2 /*Cauan*/ {
+    
+    background-image: url('/src/assets/1.png');
+  }
+  .av3 /*Amanda*/ {
+    
+    background-image: url('/src/assets/6.webp');
+  }
+  .av4 /*Arthur*/ {
+    
+    background-image: url('/src/assets/4.webp');
+  }
+  .av5 /*Gustavo*/ {
+    
+    background-image: url('/src/assets/3.png');
+  }
+  .av6 /*Daniel*/ {
+    
+    background-image: url('/src/assets/5.webp');
+  }
+ 
