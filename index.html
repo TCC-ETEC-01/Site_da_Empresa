@@ -14,11 +14,13 @@
 </head>
 
 <body>
+    <!-- Criando a nav do site-->
     <nav class="navbar  navbar-dark bg-dark" id="inicio">
         <div class="container">
-            <a class="navbar-brand" href="" id="titulo" >Dev Pulse</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="" id="titulo">Dev Pulse</a>
+            <button id="btn-nav" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -31,6 +33,7 @@
             </div>
         </div>
     </nav>
+    <!--Crianção das referencias-->
     <aside class="sidebar2">
         <nav class="navbar2">
             <ul>
@@ -41,9 +44,8 @@
             </ul>
         </nav>
     </aside>
-
-
-    <header class="container text-center text-white my-5">
+    <!--Criação do carrossel-->
+    <header class="container text-center text-white">
         <section id="servicos" class="my-5">
             <h2>Serviços</h2>
         </section>
@@ -87,86 +89,160 @@
             </div>
         </div>
     </header>
-    <br></br>
-    <br></br>
-    <br></br>
-    <div class="equipe" id="equipe">
-        <div class="membro m1">
-         <div class="avatar av1"></div>
-             <div class="info-membro">
-                 <label>Gabriel</label>
-                <br> Analista de Sistemas
-                 <label> Responsável por mapear requisitos, garantir a lógica dos fluxos e apoiar a equipe técnica nas decisões estratégicas do projeto.</label>
-             </div>    
-        </div>
-        <div class="membro m2">
-         
-         <div class="avatar av2"></div>
-             <div class="info-membro">
-                 <label>Cauan</label>
-                <br> Desenvolvedor Full Stack
-                 <label> Atua na construção do front-end e back-end, com foco em performance, integração de APIs e segurança da aplicação.</label>
-             </div>    
-        </div>
-        <div class="membro m3">
-         <div class="avatar av3"></div>
-             <div class="info-membro">
-                 <label>Amanda </label>
-                <br> Desenvolvedora Front-end
-                 <label> Especialista em interfaces modernas e acessíveis. Cuida da usabilidade e transforma ideias em experiências visuais</label>
-             </div>    
-        </div>
-        <div class="membro m4">
-         <div class="avatar av4"></div>
-             <div class="info-membro">
-                 <label>Arthur </label>
-                <br>Designer UI
-                 <label> Focado na experiência do usuário, desenvolve protótipos e interfaces intuitivas que conectam as pessoas ao produto.</label>
-             </div>    
-        </div>
-        <div class="membro m5">
-         <div class="avatar av5"></div>
-             <div class="info-membro">
-                 <label>Gustavo Lima</label>
-                <br> Designer Gráfico
-                 <label>Cria identidades visuais, layouts e materiais gráficos. Une estética e funcionalidade para valorizar o projeto.</label>
-             </div>    
-        </div>
-        <div class="membro m6">
-         <div class="avatar av6"></div>
-             <div class="info-membro">
-                 <label>Daniel</label>
-                <br> Desenvolvedor Full Stack
-                 <label> Participa ativamente no desenvolvimento do front-end e back-end. Garante que tudo funcione de forma fluida e eficiente.</label>
-             </div>    
-        </div>
-     </div>
-     <br></br>
-     <section class="row mt-4 mb-5 text-white " id="sobre">
-        <h2 class="mb-4">Sobre Nós</h2>
-            <div class="col-lg-6 px-1 ">
-                <div class="texSobre border border-2 border-info rounded-5 bg-info bg-opacity-50 p-3">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ut quod, nobis, totam magni
-                        ipsum, iusto
-                        ipsam eum dignissimos deserunt illum aliquam possimus consequuntur sint quo libero porro et
-                        adipisci sapiente
-                        eius recusandae sit maxime quis voluptas. Facere, doloremque illum.</p>
+
+
+    <h1 class="p-5 mt-5 text-white">Equipe</h1>
+
+    <div class="container " id="equipe">
+        <div class="accordion">
+
+            <div class="row row-cols-2 row-cols-lg-3 g-3 p-3">
+                <div class="col">
+                    <div class="card">
+                        <img class="cadr img p-3" src="https://picsum.photos/400/400?random=1" alt="">
+
+                        <input type="checkbox" id="item1">
+                        <label for="item1" class="accordion-title">Cauan</label>
+                        <div class="accordion-content ">
+                            <h5 class="card title">Desenvolvedor Full Stack</h5>
+                            <p class="cadr text pb-2">Atua na construção do front-end e back-end.</p>
+
+                        </div>
+                        <div class="bot text-center pt-3 pb-2">
+                            <button class="btn rounded-pill btn-primary col-6 " id="btnToast">
+                                Contato
+                            </button>
+                        </div>
+
+                        <div class="toast-container position-fixed top-0 end-0 p-3" id="toastContainer">
+                            <div class="toast" id="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                                <div class="toast-header">
+                                    <strong class="me-auto">Desenvolvedor Full Stack</strong>
+                                    <small class="text-muted">agora mesmo</small>
+                                    <button type="button" class="btn-close" data-bs-dismiss="toast"
+                                        aria-label="Fechar"></button>
+                                </div>
+                                <div class="toast-body">
+                                    <pre>Telefone:</pre>
+                                    <a href="https://wa.me/5511967639585" target="_blank">55 (11) 96763-9585</a>
+                                    <pre>E-mail:</pre>
+                                    <a href="mailto:amandapcardoso981@gmail.com">amandapcardoso981@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <br>
-            </div>
-            <div class="col-lg-6 px-1">
-                <div class="texSobre border border-2 border-primary rounded-5 bg-primary bg-opacity-50 p-3">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi et voluptates necessitatibus
-                        cumque nam esse laborum. Incidunt officia ratione
-                        numquam possimus maiores placeat ea ipsum?</p>
+                <div class="col">
+                    <div class="card">
+                        <img class="cadr img p-3" src="https://picsum.photos/400/400?random=2" alt="">
+                        <h4 class="card header">Cauan</h4>
+                        <h5 class="card title">Desenvolvedor Full Stack</h5>
+                        <p class="cadr text">Atua na construção do front-end e back-end, com foco em performance,
+                            integração
+                            de
+                            APIs e segurança da aplicação.</label>
+                        </p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img class="cadr img p-3" src="https://picsum.photos/400/400?random=3" alt="">
+                        <h4 class="card header">Cauan</h4>
+                        <h5 class="card title">Desenvolvedor Full Stack</h5>
+                        <p class="cadr text">Atua na construção do front-end e back-end, com foco em performance,
+                            integração
+                            de
+                            APIs e segurança da aplicação.</label>
+                        </p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img class="cadr img p-3" src="https://picsum.photos/400/400?random=4" alt="">
+                        <h4 class="card header">Cauan</h4>
+                        <h5 class="card title">Desenvolvedor Full Stack</h5>
+                        <p class="cadr text">Atua na construção do front-end e back-end, com foco em performance,
+                            integração
+                            de
+                            APIs e segurança da aplicação.</label>
+                        </p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img class="cadr img p-3" src="https://picsum.photos/400/400?random=5" alt="">
+                        <h4 class="card header">Cauan</h4>
+                        <h5 class="card title">Desenvolvedor Full Stack</h5>
+                        <p class="cadr text">Atua na construção do front-end e back-end, com foco em performance,
+                            integração
+                            de
+                            APIs e segurança da aplicação.</label>
+                        </p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img class="cadr img p-3" src="https://picsum.photos/400/400?random=6" alt="">
+                        <h4 class="card header">Cauan</h4>
+                        <h5 class="card title">Desenvolvedor Full Stack</h5>
+                        <p class="cadr text">Atua na construção do front-end e back-end, com foco em performance,
+                            integração
+                            de
+                            APIs e segurança da aplicação.</label>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </section>
+
+        </div>
+    </div>
+
+    <!--Sobre nós-->
+    <br></br>
+    <h2 class="mb-4 text-white">Sobre Nós</h2>
+    <section class="row row-cols-1 row-cols-lg-2 g-5 mt-4 mb-5 text-white" id="sobre">
+        <div class="col p-lg-4">
+            <div class="texSobre border border-2 border-info rounded-5 bg-info bg-opacity-50 ">
+                <p class="p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ut quod, nobis, totam
+                    magni
+                    ipsum, iusto
+                    ipsam eum dignissimos deserunt illum aliquam possimus consequuntur sint quo libero porro et
+                    adipisci sapiente
+                    eius recusandae sit maxime quis voluptas. Facere, doloremque illum.</p>
+            </div>
+            <br>
+        </div>
+        <div class="col p-lg-4">
+            <div class="texSobre border border-2 border-primary rounded-5 bg-primary bg-opacity-50 ">
+                <p class="p-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi et voluptates
+                    necessitatibus
+                    cumque nam esse laborum. Incidunt officia ratione
+                    numquam possimus maiores placeat ea ipsum?</p>
+            </div>
+        </div>
+    </section>
+
+
+    teste
+    <div class="accordion">
+        <input type="checkbox" id="item1">
+        <label for="item1" class="accordion-title">Título 1</label>
+        <div class="accordion-content">
+            <p>Este é o conteúdo do primeiro item.</p>
+        </div>
+
+        <input type="checkbox" id="item2">
+        <label for="item2" class="accordion-title">Título 2</label>
+        <div class="accordion-content">
+            <p>Este é o conteúdo do segundo item.</p>
+        </div>
+    </div>
+
 
     </div>
-     <br></br>
-    <footer class="bg-dark text-white py-5 " id="footer">
-        <div class="container">
+    <br></br>
+    <footer class="bg-dark text-white " id="footer">
+        <div class="container  p-5">
             <div class="text-center text-md-start align-items-center  row ">
                 <div class="text-center col-4 ">
                     <img src="" alt="Logo da Empresa" class="img-fluid" style="max-width: 120px;">
@@ -181,8 +257,8 @@
                 <div class="text-center col-4 ">
                     <h4>Contato</h4>
                     <ul class="list-unstyled">
-                        <li><a href="https://wa.me/5511967639585?text=Olá, gostaria de uma ajuda. " class="text-white text-decoration-none"><i
-                                    class="fab fa-whatsapp fa-lg"></i></a>
+                        <li><a href="https://wa.me/5511967639585?text=Olá, gostaria de uma ajuda. "
+                                class="text-white text-decoration-none"><i class="fab fa-whatsapp fa-lg"></i></a>
                         <li><a href="#" class="text-white text-decoration-none"><i
                                     class="fab fa-instagram fa-lg"></i></a>
                         <li><a href="mailto:devpulse25@gmail.com" class="text-white text-decoration-none"><i
@@ -196,6 +272,7 @@
             </div>
         </div>
     </footer>
+
 
     <!-- link do js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

@@ -7,7 +7,7 @@
 body{
     background: linear-gradient(to right, #2b0eb4, #620280);
 }
-.navbar{text-align: center;!important}
+.navbar{text-align: center!important ;}
 
 .mb-4{
     text-align: center;
@@ -60,7 +60,7 @@ body{
 }
 
 @media (min-width: 975px) {
-    button {
+    #btn-nav {
         visibility:hidden;
     }
     .sidebar2 .navbar2 {
@@ -108,6 +108,8 @@ body{
     background-position: center;
     cursor: pointer;
 }
+.row { margin-left: 0; margin-right: 0; }
+
 
    .av1 /*Gabriel*/ {
     
@@ -134,3 +136,35 @@ body{
     background-image: url('/src/assets/5.webp');
   }
  
+
+
+
+
+
+
+  .accordion input[type="checkbox"] {
+  display: none;
+}
+
+.accordion-title {
+  display: block;
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 5px;
+  border-radius: 4px;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  background: #f1f1f1;
+  transition: max-height 0.3s ease-out;
+  padding: 0 10px;
+}
+
+.accordion input[type="checkbox"]:checked + .accordion-title + .accordion-content {
+  max-height: 100px; /* Ajuste conforme o conteúdo */
+  padding: 10px;
+}
