@@ -55,27 +55,7 @@ document.querySelectorAll(".btnToast").forEach((btn) => {
     bsToast.show();
   });
 });
-// //contato da equipe "pessoa 2"
 
-//  const btnToast2 = document.getElementById("btnToast2");
 
-// btnToast2.addEventListener("click", () => {
-//   const toast2 = document.getElementById("toast2");
-//   const container = document.getElementById("toastContainer2");
-
-  
-//   const novoToast2 = toast2.cloneNode(true);
-//   novoToast2.id = ""; 
-//   const toastBody2 = novoToast2.querySelector(".toast-body2");
-//   toastBody2.innerHTML += `<hr><small>${new Date().toLocaleString()}</small>`;
-
-//   container.appendChild(novoToast2);
-//   const bsToast2 = new bootstrap.Toast(novoToast2);
-//   bsToast2.show();
-
-//     if (isOpen) {
-//       content.style.maxHeight = content.scrollHeight + "px";
-//     } else {
-//       content.style.maxHeight = null;
-//     }
-// });
+const carouselImg = document.getElementById('carouselImg');
+const bsCarouselImg = new bootstrap.Carousel(carouselImg);
