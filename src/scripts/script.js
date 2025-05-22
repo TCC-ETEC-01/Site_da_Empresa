@@ -39,27 +39,43 @@ avatares.forEach(avatar => {
   });
 });
 
-//contato da equipe 
+//contato da equipe "pessoa 1"
+document.querySelectorAll(".btnToast").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const card = btn.closest(".card");
+    const toast = card.querySelector(".toast");
+    const container = card.querySelector(".toastContainer");
 
- const btnToast = document.getElementById("btnToast");
+    const novoToast = toast.cloneNode(true);
+    novoToast.querySelector(".toast-body").innerHTML += `<hr><small>${new Date().toLocaleString()}</small>`;
 
-btnToast.addEventListener("click", () => {
-  const toast = document.getElementById("toast");
-  const container = document.getElementById("toastContainer");
+    container.appendChild(novoToast);
+
+    const bsToast = new bootstrap.Toast(novoToast);
+    bsToast.show();
+  });
+});
+// //contato da equipe "pessoa 2"
+
+//  const btnToast2 = document.getElementById("btnToast2");
+
+// btnToast2.addEventListener("click", () => {
+//   const toast2 = document.getElementById("toast2");
+//   const container = document.getElementById("toastContainer2");
 
   
-  const novoToast = toast.cloneNode(true);
-  novoToast.id = ""; 
-  const toastBody = novoToast.querySelector(".toast-body");
-  toastBody.innerHTML += `<hr><small>${new Date().toLocaleString()}</small>`;
+//   const novoToast2 = toast2.cloneNode(true);
+//   novoToast2.id = ""; 
+//   const toastBody2 = novoToast2.querySelector(".toast-body2");
+//   toastBody2.innerHTML += `<hr><small>${new Date().toLocaleString()}</small>`;
 
-  container.appendChild(novoToast);
-  const bsToast = new bootstrap.Toast(novoToast);
-  bsToast.show();
+//   container.appendChild(novoToast2);
+//   const bsToast2 = new bootstrap.Toast(novoToast2);
+//   bsToast2.show();
 
-    if (isOpen) {
-      content.style.maxHeight = content.scrollHeight + "px";
-    } else {
-      content.style.maxHeight = null;
-    }
-});
+//     if (isOpen) {
+//       content.style.maxHeight = content.scrollHeight + "px";
+//     } else {
+//       content.style.maxHeight = null;
+//     }
+// });
