@@ -2,401 +2,368 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- link bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- link do css -->
-    <link rel="stylesheet" href="./src/styles/style.css">
-    <title>Site da Empresa</title>
+  <!-- link bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- link do css -->
+  <link rel="stylesheet" href="./src/styles/style.css">
+  <title>Site da Empresa</title>
 </head>
 
 <body>
-    <!-- Criando a nav do site-->
-    <nav class="navbar  navbar-dark bg-dark" id="inicio">
-        <div class="container">
-            <a class="navbar-brand" href="" id="titulo">Dev Pulse</a>
-            <button id="btn-nav" class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#equipe">Equipe</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre Nós</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#footer">Entre em Contato</a></li>
-                </ul>
-            </div>
-        </div>
+  <!-- Criando a nav do site-->
+  <nav class="navbar  navbar-dark bg-dark" id="inicio">
+    <div class="container">
+      <a class="navbar-brand" href="" id="titulo">Dev Pulse</a>
+      <button id="btn-nav" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#equipe">Equipe</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre Nós</a></li>
+          <li class="nav-item"><a class="nav-link" href="#footer">Entre em Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--Crianção das referencias-->
+  <aside class="sidebar2">
+    <nav class="navbar2">
+      <ul>
+        <li><a href="#inicio"><i class="fas fa-home"></i></a></li>
+        <li><a href="#equipe"><i class="fas fa-users"></i></a></li>
+        <li><a href="#sobre"><i class="fas fa-cogs"></i></a></li>
+        <li><a href="#footer"><i class="fas fa-envelope"></i></a></li>
+      </ul>
     </nav>
-    <!--Crianção das referencias-->
-    <aside class="sidebar2">
-        <nav class="navbar2">
-            <ul>
-                <li><a href="#inicio"><i class="fas fa-home"></i></a></li>
-                <li><a href="#equipe"><i class="fas fa-users"></i></a></li>
-                <li><a href="#sobre"><i class="fas fa-cogs"></i></a></li>
-                <li><a href="#footer"><i class="fas fa-envelope"></i></a></li>
-            </ul>
-        </nav>
-    </aside>
-    <!--Criação do carrossel-->
-    <header class="container text-center text-white">
-        <section id="servicos" class="my-5">
-            <h2>Serviços</h2>
-        </section>
-        <div class="container row">
-            <div class="carousel slide col-lg-6" data-bs-ride="carousel" id="carouselImages" data-bs-touch="false">
-                <div class="carousel-indicators">
-                    <button class="active" data-bs-target="#carouselImages" data-bs-slide-to="0"></button>
-                    <button data-bs-target="#carouselImages" data-bs-slide-to="1"></button>
-                    <button data-bs-target="#carouselImages" data-bs-slide-to="2"></button>
+  </aside>
+  <!--Criação do carrossel-->
+  <header class="container text-center text-white">
+    <section id="servicos" class="my-5">
+      <h2>Serviços</h2>
+    </section>
+    <div class="container row">
+      <div class="carousel slide col-lg-6" data-bs-ride="carousel" id="carouselImages" data-bs-touch="false">
+        <div class="carousel-indicators">
+          <button class="active" data-bs-target="#carouselImages" data-bs-slide-to="0"></button>
+          <button data-bs-target="#carouselImages" data-bs-slide-to="1"></button>
+          <button data-bs-target="#carouselImages" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="6000">
+            <img src="https://picsum.photos/1280/420?random=1" alt="" class="d-block w-100 rounded-3">
+          </div>
+          <div class="carousel-item" data-bs-interval="6000">
+            <img src="https://picsum.photos/1280/420?random=2" alt="" class="d-block w-100 rounded-3">
+          </div>
+          <div class="carousel-item" data-bs-interval="6000">
+            <img src="https://picsum.photos/1280/420?random=3" alt="" class="d-block w-100 rounded-3">
+          </div>
+        </div>
+      </div>
+      <div class="carousel slide col-lg-6" data-bs-ride="carousel" id="carouselText" data-bs-touch="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="6000">
+            <h3 class="titulo">Projeto 1</h3>
+            <b class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quisquam recusandae
+              mollitia dignissimos culpa animi quod et voluptatibus facilis architecto?</b>
+          </div>
+          <div class="carousel-item" data-bs-interval="6000">
+            <h3 class="titulo">Projeto 2</h3>
+            <b class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quisquam recusandae
+              mollitia dignissimos culpa animi quod et voluptatibus facilis architecto?</b>
+          </div>
+          <div class="carousel-item" data-bs-interval="6000">
+            <h3 class="titulo">Projeto 3</h3>
+            <b class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quisquam recusandae
+              mollitia dignissimos culpa animi quod et voluptatibus facilis architecto?</b>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <h1 class="p-5 mt-5 text-white text-center">Equipe</h1>
+
+  <div class="container text-center p-2" id="equipe">
+    <div class="accordion">
+      <div class="row row-cols-2 row-cols-lg-3 g-3 p-3">
+
+        <!-- Cauã -->
+        <div class="col">
+          <div class="card">
+            <img class="cadr img p-3 mx-auto d-block" src="src/assets/Foto_Equipe_Caua.jpeg" alt="" style="height: 387px; width: 330px;">
+            <input type="checkbox" class="item1" id="item1_cauan">
+            <label for="item1_cauan" class="accordion-title">Cauã</label>
+            <div class="accordion-content">
+              <h5 class="card title">Desenvolvedor Full Stack</h5>
+              <p class="cadr text pb-2">Atua na construção do front-end e back-end.</p>
+            </div>
+            <div class="bot text-center pt-3 pb-2">
+              <button class="btn rounded-pill btn-primary col-6 btnToast">Contato</button>
+            </div>
+            <div class="toast-container position-fixed top-0 end-0 p-3 toastContainer">
+              <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                  <strong class="me-auto">Desenvolvedor Full Stack</strong>
+                  <small class="text-muted">agora mesmo</small>
+                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Fechar"></button>
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="6000">
-                        <img src="https://picsum.photos/1280/420?random=1" alt="" class="d-block w-100 rounded-3">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="6000">
-                        <img src="https://picsum.photos/1280/420?random=2" alt="" class="d-block w-100 rounded-3">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="6000">
-                        <img src="https://picsum.photos/1280/420?random=3" alt="" class="d-block w-100 rounded-3">
-                    </div>
-                </div>
-            </div>
-            <div class="carousel slide col-lg-6" data-bs-ride="carousel" id="carouselText" data-bs-touch="false">
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="6000">
-                        <h3 class="titulo">Projeto 1</h3>
-                        <b class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quisquam recusandae
-                            mollitia dignissimos culpa animi quod et voluptatibus facilis architecto?</b>
-                    </div>
-                    <div class="carousel-item" data-bs-interval="6000">
-                        <h3 class="titulo">Projeto 2</h3>
-                        <b class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quisquam recusandae
-                            mollitia dignissimos culpa animi quod et voluptatibus facilis architecto?</b>
-                    </div>
-                    <div class="carousel-item" data-bs-interval="6000">
-                        <h3 class="titulo">Projeto 3</h3>
-                        <b class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quisquam recusandae
-                            mollitia dignissimos culpa animi quod et voluptatibus facilis architecto?</b>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-
-    <h1 class="p-5 mt-5 text-white text-center">Equipe</h1>
-
-    <div class="container text-center p-2" id="equipe">
-        <div class="accordion">
-
-            <div class="row row-cols-2 row-cols-lg-3 g-3 p-3">
-                <!-- Exemplo para um card (repita para outros, mas SEM repetir IDs) -->
-<div class="col">
-  <div class="card">
-    <img class="cadr img p-3" src="https://picsum.photos/400/400?random=1" alt="">
-    <input type="checkbox" class="item1" id="item1_1">
-    <label for="item1_1" class="accordion-title">Cauan</label>
-    
-    <div class="accordion-content">
-      <h5 class="card title">Desenvolvedor Full Stack</h5>
-      <p class="cadr text pb-2">Atua na construção do front-end e back-end.</p>
-    </div>
-    
-    <div class="bot text-center pt-3 pb-2">
-      <button class="btn rounded-pill btn-primary col-6 btnToast">
-        Contato
-      </button>
-    </div>
-
-    <!-- Toast específico desse card -->
-    <div class="toast-container position-fixed top-0 end-0 p-3 toastContainer">
-      <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-        <div class="toast-header">
-          <strong class="me-auto">Desenvolvedor Full Stack</strong>
-          <small class="text-muted">agora mesmo</small>
-          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Fechar"></button>
-        </div>
-        <div class="toast-body">
-          <pre>Telefone:</pre>
-          <a href="https://wa.me/5511967639585" target="_blank">55 (11) 96763-9585</a>
-          <pre>E-mail:</pre>
-          <a href="mailto:laurapcardoso981@gmail.com">Lauracardoso981@gmail.com</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div><div class="col">
-  <div class="card">
-    <img class="cadr img p-3" src="https://picsum.photos/400/400?random=2" alt="">
-    <input type="checkbox" class="item1" id="item1_1">
-    <label for="item1_1" class="accordion-title">Gustavo  co</label>
-    
-    <div class="accordion-content">
-      <h5 class="card title">Desenvolvedor Full Stack</h5>
-      <p class="cadr text pb-2">Atua na construção do front-end e back-end.</p>
-    </div>
-    
-    <div class="bot text-center pt-3 pb-2">
-      <button class="btn rounded-pill btn-primary col-6 btnToast">
-        Contato
-      </button>
-    </div>
-
-    <!-- Toast específico desse card -->
-    <div class="toast-container position-fixed top-0 end-0 p-3 toastContainer">
-      <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-        <div class="toast-header">
-          <strong class="me-auto">Desenvolvedor Full Stack</strong>
-          <small class="text-muted">agora mesmo</small>
-          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Fechar"></button>
-        </div>
-        <div class="toast-body">
-          <pre>Telefone:</pre>
-          <a href="https://wa.me/5511967639585" target="_blank">55 (11) 96763-9585</a>
-          <pre>E-mail:</pre>
-          <a href="mailto:amandapcardoso981@gmail.com">liviacardoso981@gmail.com</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="col">
-  <div class="card">
-    <img class="cadr img p-3" src="https://picsum.photos/400/400?random=3" alt="">
-    <input type="checkbox" class="item1" id="item1_1">
-    <label for="item1_1" class="accordion-title">Gustavo Lima</label>
-    
-    <div class="accordion-content">
-      <h5 class="card title">Desenvolvedor Full Stack</h5>
-      <p class="cadr text pb-2">Atua na construção do front-end e back-end.</p>
-    </div>
-    
-    <div class="bot text-center pt-3 pb-2">
-      <button class="btn rounded-pill btn-primary col-6 btnToast">
-        Contato
-      </button>
-    </div>
-
-    <!-- Toast específico desse card -->
-    <div class="toast-container position-fixed top-0 end-0 p-3 toastContainer">
-      <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-        <div class="toast-header">
-          <strong class="me-auto">Desenvolvedor Full Stack</strong>
-          <small class="text-muted">agora mesmo</small>
-          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Fechar"></button>
-        </div>
-        <div class="toast-body">
-          <pre>Telefone:</pre>
-          <a href="https://wa.me/5511967639585" target="_blank">55 (11) 96763-9585</a>
-          <pre>E-mail:</pre>
-          <a href="mailto:amandapcardoso981@gmail.com">amandapcardoso981@gmail.com</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="col">
-  <div class="card">
-    <img class="cadr img p-3" src="https://picsum.photos/400/400?random=4" alt="">
-    <input type="checkbox" class="item1" id="item1_1">
-    <label for="item1_1" class="accordion-title">Arthur Romão</label>
-    
-    <div class="accordion-content">
-      <h5 class="card title">Desenvolvedor Full Stack</h5>
-      <p class="cadr text pb-2">Atua na construção do front-end e back-end.</p>
-    </div>
-    
-    <div class="bot text-center pt-3 pb-2">
-      <button class="btn rounded-pill btn-primary col-6 btnToast">
-        Contato
-      </button>
-    </div>
-
-    <!-- Toast específico desse card -->
-    <div class="toast-container position-fixed top-0 end-0 p-3 toastContainer">
-      <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-        <div class="toast-header">
-          <strong class="me-auto">Desenvolvedor Full Stack</strong>
-          <small class="text-muted">agora mesmo</small>
-          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Fechar"></button>
-        </div>
-        <div class="toast-body">
-          <pre>Telefone:</pre>
-          <a href="https://wa.me/5511967639585" target="_blank">55 (11) 96763-9585</a>
-          <pre>E-mail:</pre>
-          <a href="mailto:amandapcardoso981@gmail.com">Joaocardoso981@gmail.com</a>
-        </div>
-      </div>
-    </div>
-    
-  </div>
-</div>
-<div class="col">
-  <div class="card">
-    <img class="cadr img p-3" src="https://picsum.photos/400/400?random=5" alt="">
-    <input type="checkbox" class="item1" id="item1_1">
-    <label for="item1_1" class="accordion-title">Amanda Pereira</label>
-    
-    <div class="accordion-content">
-      <h5 class="card title">Desenvolvedor Full Stack</h5>
-      <p class="cadr text pb-2">Atua na construção do front-end e back-end.</p>
-    </div>
-    
-    <div class="bot text-center pt-3 pb-2">
-      <button class="btn rounded-pill btn-primary col-6 btnToast">
-        Contato
-      </button>
-    </div>
-
-    <!-- Toast específico desse card -->
-    <div class="toast-container position-fixed top-0 end-0 p-3 toastContainer">
-      <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-        <div class="toast-header">
-          <strong class="me-auto">Desenvolvedor Full Stack</strong>
-          <small class="text-muted">agora mesmo</small>
-          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Fechar"></button>
-        </div>
-        <div class="toast-body">
-          <pre>Telefone:</pre>
-          <a href="https://wa.me/5511967639585" target="_blank">55 (11) 96763-9585</a>
-          <pre>E-mail:</pre>
-          <a href="mailto:amandapcardoso981@gmail.com">Joaocardoso981@gmail.com</a>
-        </div>
-      </div>
-    </div>
-    
-  </div>
-</div>
-<div class="col">
-  <div class="card">
-    <img class="cadr img p-3" src="https://picsum.photos/400/400?random=6" alt="">
-    <input type="checkbox" class="item1" id="item1_1">
-    <label for="item1_1" class="accordion-title">Daniel Sobral</label>
-    
-    <div class="accordion-content">
-      <h5 class="card title">Desenvolvedor Full Stack</h5>
-      <p class="cadr text pb-2">Atua na construção do front-end e back-end.</p>
-    </div>
-    
-    <div class="bot text-center pt-3 pb-2">
-      <button class="btn rounded-pill btn-primary col-6 btnToast">
-        Contato
-      </button>
-    </div>
-
-    <!-- Toast específico desse card -->
-    <div class="toast-container position-fixed top-0 end-0 p-3 toastContainer">
-      <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-        <div class="toast-header">
-          <strong class="me-auto">Desenvolvedor Full Stack</strong>
-          <small class="text-muted">agora mesmo</small>
-          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Fechar"></button>
-        </div>
-        <div class="toast-body">
-          <pre>Telefone:</pre>
-          <a href="https://wa.me/5511967639585" target="_blank">55 (11) 96763-9585</a>
-          <pre>E-mail:</pre>
-          <a href="mailto:amandapcardoso981@gmail.com">Joaocardoso981@gmail.com</a>
-        </div>
-      </div>
-    </div>
-    
-  </div>
-</div>
-
-            </div>
-
-        </div>
-    </div>
-
-    <!--Sobre nós-->
-    <br></br>
-    <h2 class="mb-4 text-white">Sobre Nós</h2>
-    <section class="row row-cols-1 row-cols-lg-2 g-5 mt-4 mb-5 text-white" id="sobre">
-        
-          <div class="texto">
-        <div class="texSobre ps-5 pt-4"> 
-                <p class="pb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ut quod, nobis, totam
-                    magni
-                    ipsum, iusto
-                    ipsam eum dignissimos deserunt illum aliquam possimus consequuntur sint quo libero porro et
-                    adipisci sapiente
-                    eius recusandae sit maxime quis voluptas. Facere, doloremque illum.</p>
-                  <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi et voluptates
-                    necessitatibus
-                    cumque nam esse laborum. Incidunt officia ratione
-                    numquam possimus maiores placeat ea ipsum?</p>
-            
-                  </div>    
-          
-            </div>
-            <div class="carousel row" data-bs-ride="carousel" data-bs-touch="false"id="carouselImg" >
-              <div class="carouser-slide">
-                <div class="carousel-inner ">
-                    <div class="carousel-item active" data-bs-interval="6000">
-                        <img src="https://picsum.photos/1280/420?random=1" alt="" class="d-block w-100 rounded-3">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="6000">
-                        <img src="https://picsum.photos/1280/420?random=2" alt="" class="d-block w-100 rounded-3">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="6000">
-                        <img src="https://picsum.photos/1280/420?random=3" alt="" class="d-block w-100 rounded-3">
-                    </div>
+                <div class="toast-body">
+                  <pre>Telefone:</pre>
+                  <a href="https://wa.me/551196918-7486" target="_blank">55 (11) 96918-7486</a>
+                  <pre>E-mail:</pre>
+                  <a href="mailto:dev.cauaraphael@gmail.com">dev.cauaraphael@gmail.com</a>
                 </div>
               </div>
-        
             </div>
-        
-    </section>
+          </div>
+        </div>
+
+        <!-- Gustavo Coról -->
+        <div class="col">
+          <div class="card">
+            <img class="cadr img p-3 mx-auto d-block" src="src/assets/Foto_Equipe_Corol.jpeg" alt="" style="height: 387px; width: 330px;">
+            <input type="checkbox" class="item1" id="item1_gustavo_co">
+            <label for="item1_gustavo_co" class="accordion-title">Gustavo Coról</label>
+            <div class="accordion-content">
+              <h5 class="card title">Desenvolvedor Full Stack</h5>
+              <p class="cadr text pb-2">Atua na construção do front-end e back-end.</p>
+            </div>
+            <div class="bot text-center pt-3 pb-2">
+              <button class="btn rounded-pill btn-primary col-6 btnToast">Contato</button>
+            </div>
+            <div class="toast-container position-fixed top-0 end-0 p-3 toastContainer">
+              <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                  <strong class="me-auto">Desenvolvedor Full Stack</strong>
+                  <small class="text-muted">agora mesmo</small>
+                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Fechar"></button>
+                </div>
+                <div class="toast-body">
+                  <pre>Telefone:</pre>
+                  <a href="https://wa.me/551198288-2206" target="_blank">55 (11) 98288-2206</a>
+                  <pre>E-mail:</pre>
+                  <a href="mailto:gabrielcorolleite@gmail.com">gabrielcorolleite@gmail.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gustavo Lima -->
+        <div class="col">
+          <div class="card">
+            <img class="cadr img p-3 mx-auto d-block" src="https://picsum.photos/400/400?random=3" alt="" style="height: 387px; width: 330px;">
+            <input type="checkbox" class="item1" id="item1_gustavo_lima">
+            <label for="item1_gustavo_lima" class="accordion-title">Gustavo Lima</label>
+            <div class="accordion-content">
+              <h5 class="card title">Desenvolvedor Full Stack</h5>
+              <p class="cadr text pb-2">Atua na construção do front-end e back-end.</p>
+            </div>
+            <div class="bot text-center pt-3 pb-2">
+              <button class="btn rounded-pill btn-primary col-6 btnToast">Contato</button>
+            </div>
+            <div class="toast-container position-fixed top-0 end-0 p-3 toastContainer">
+              <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                  <strong class="me-auto">Desenvolvedor Full Stack</strong>
+                  <small class="text-muted">agora mesmo</small>
+                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Fechar"></button>
+                </div>
+                <div class="toast-body">
+                  <pre>Telefone:</pre>
+                  <a href="https://wa.me/551193031-4180" target="_blank">55 (11) 93031-4180</a>
+                  <pre>E-mail:</pre>
+                  <a href="mailto:slima.gusta@gmail.com">slima.gusta@gmail.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Arthur Romão -->
+        <div class="col">
+          <div class="card">
+            <img class="cadr img p-3 mx-auto d-block" src="https://picsum.photos/400/400?random=4" alt="" style="height: 387px; width: 330px;">
+            <input type="checkbox" class="item1" id="item1_arthur">
+            <label for="item1_arthur" class="accordion-title">Arthur Romão</label>
+            <div class="accordion-content">
+              <h5 class="card title">Desenvolvedor Full Stack</h5>
+              <p class="cadr text pb-2">Atua na construção do front-end e back-end.</p>
+            </div>
+            <div class="bot text-center pt-3 pb-2">
+              <button class="btn rounded-pill btn-primary col-6 btnToast">Contato</button>
+            </div>
+            <div class="toast-container position-fixed top-0 end-0 p-3 toastContainer">
+              <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                  <strong class="me-auto">Desenvolvedor Full Stack</strong>
+                  <small class="text-muted">agora mesmo</small>
+                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Fechar"></button>
+                </div>
+                <div class="toast-body">
+                  <pre>Telefone:</pre>
+                  <a href="https://wa.me/5511967639585" target="_blank">55 (11) 97326-6983</a>
+                  <pre>E-mail:</pre>
+                  <a href="mailto:joaocardoso981@gmail.com">joaocardoso981@gmail.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Amanda Pereira -->
+        <div class="col">
+          <div class="card">
+            <img class="cadr img p-3 mx-auto d-block" src="src/assets/Foto_Equipe_Amanda.jpeg" alt="" style="height: 387px; width: 330px;">
+            <input type="checkbox" class="item1" id="item1_amanda">
+            <label for="item1_amanda" class="accordion-title">Amanda Pereira</label>
+            <div class="accordion-content">
+              <h5 class="card title">Desenvolvedor Full Stack</h5>
+              <p class="cadr text pb-2">Atua na construção do front-end e back-end.</p>
+            </div>
+            <div class="bot text-center pt-3 pb-2">
+              <button class="btn rounded-pill btn-primary col-6 btnToast">Contato</button>
+            </div>
+            <div class="toast-container position-fixed top-0 end-0 p-3 toastContainer">
+              <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                  <strong class="me-auto">Desenvolvedor Full Stack</strong>
+                  <small class="text-muted">agora mesmo</small>
+                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Fechar"></button>
+                </div>
+                <div class="toast-body">
+                  <pre>Telefone:</pre>
+                  <a href="https://wa.me/5511967639585" target="_blank">55 (11) 96763-9585</a>
+                  <pre>E-mail:</pre>
+                  <a href="mailto:amandapcardoso981@gmail.com">amandapcardoso981@gmail.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Daniel Sobral -->
+        <div class="col">
+          <div class="card">
+            <img class="cadr img p-3 mx-auto d-block" src="https://picsum.photos/400/400?random=6" alt="" style="height: 387px; width: 330px;">
+            <input type="checkbox" class="item1" id="item1_daniel">
+            <label for="item1_daniel" class="accordion-title">Daniel Sobral</label>
+            <div class="accordion-content">
+              <h5 class="card title">Desenvolvedor Full Stack</h5>
+              <p class="cadr text pb-2">Atua na construção do front-end e back-end.</p>
+            </div>
+            <div class="bot text-center pt-3 pb-2">
+              <button class="btn rounded-pill btn-primary col-6 btnToast">Contato</button>
+            </div>
+            <div class="toast-container position-fixed top-0 end-0 p-3 toastContainer">
+              <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                  <strong class="me-auto">Desenvolvedor Full Stack</strong>
+                  <small class="text-muted">agora mesmo</small>
+                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Fechar"></button>
+                </div>
+                <div class="toast-body">
+                  <pre>Telefone:</pre>
+                  <a href="https://wa.me/551198238-3817" target="_blank">55 11 98238-3817</a>
+                  <pre>E-mail:</pre>
+                  <a href="mailto:danielsobraldev@gmail.com">danielsobraldev@gmail.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!--Sobre nós-->
+  <br></br>
+  <h2 class="mb-4 text-white">Sobre Nós</h2>
+  <section class="row row-cols-1 row-cols-lg-2 g-5 mt-4 mb-5 text-white" id="sobre">
+
+    <div class="texto">
+      <div class="texSobre ps-5 pt-4">
+        <p class="pb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ut quod, nobis, totam
+          magni
+          ipsum, iusto
+          ipsam eum dignissimos deserunt illum aliquam possimus consequuntur sint quo libero porro et
+          adipisci sapiente
+          eius recusandae sit maxime quis voluptas. Facere, doloremque illum.</p>
+        <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi et voluptates
+          necessitatibus
+          cumque nam esse laborum. Incidunt officia ratione
+          numquam possimus maiores placeat ea ipsum?</p>
+
+      </div>
 
     </div>
-    <br></br>
-    <footer class="bg-dark text-white " id="footer">
-        <div class="container  p-5">
-            <div class="text-center text-md-start align-items-center  row ">
-                <div class="text-center col-4 ">
-                    <img src="" alt="Logo da Empresa" class="img-fluid" style="max-width: 120px;">
-                    <h6 class="mt-3">Seu próximo passo digital começa aqui.</h6>
-                </div>
-                <section class="text-center col-4 ">
-                    <h5>CNPJ</h5>
-                    <b class="text-center"> 12.345.678/0001-95</b>
-                    <h5 class="text-center">Endereço</h5>
-                    <b class="text-center">Rua Guaipá 678, São Paulo, SP, 05089-001</b>
-                </section>
-                <div class="text-center col-4 ">
-                    <h4>Contato</h4>
-                    <ul class="list-unstyled">
-                        <li><a href="https://wa.me/5511967639585?text=Olá, gostaria de uma ajuda. "
-                                class="text-white text-decoration-none"><i class="fab fa-whatsapp fa-lg"></i></a>
-                        <li><a href="#" class="text-white text-decoration-none"><i
-                                    class="fab fa-instagram fa-lg"></i></a>
-                        <li><a href="mailto:devpulse25@gmail.com" class="text-white text-decoration-none"><i
-                                    class="fas fa-envelope fa-lg"></i></a>
-                    </ul>
-                </div>
-            </div>
-            <div class="linha-neon"></div>
-            <div class="text-center">
-                <p class="mb-0">&copy; 2025 Nome da Empresa. Todos os direitos reservados.</p>
-            </div>
+    <div class="carousel row" data-bs-ride="carousel" data-bs-touch="false" id="carouselImg">
+      <div class="carouser-slide">
+        <div class="carousel-inner ">
+          <div class="carousel-item active" data-bs-interval="6000">
+            <img src="https://picsum.photos/1280/420?random=1" alt="" class="d-block w-100 rounded-3">
+          </div>
+          <div class="carousel-item" data-bs-interval="6000">
+            <img src="https://picsum.photos/1280/420?random=2" alt="" class="d-block w-100 rounded-3">
+          </div>
+          <div class="carousel-item" data-bs-interval="6000">
+            <img src="https://picsum.photos/1280/420?random=3" alt="" class="d-block w-100 rounded-3">
+          </div>
         </div>
-    </footer>
+      </div>
+
+    </div>
+
+  </section>
+
+  </div>
+  <br></br>
+  <footer class="bg-dark text-white " id="footer">
+    <div class="container  p-5">
+      <div class="text-center text-md-start align-items-center  row ">
+        <div class="text-center col-4 ">
+          <img src="" alt="Logo da Empresa" class="img-fluid" style="max-width: 120px;">
+          <h6 class="mt-3">Seu próximo passo digital começa aqui.</h6>
+        </div>
+        <section class="text-center col-4 ">
+          <h5>CNPJ</h5>
+          <b class="text-center"> 12.345.678/0001-95</b>
+          <h5 class="text-center">Endereço</h5>
+          <b class="text-center">Rua Guaipá 678, São Paulo, SP, 05089-001</b>
+        </section>
+        <div class="text-center col-4 ">
+          <h4>Contato</h4>
+          <ul class="list-unstyled">
+            <li><a href="https://wa.me/5511967639585?text=Olá, gostaria de uma ajuda. "
+                class="text-white text-decoration-none"><i class="fab fa-whatsapp fa-lg"></i></a>
+            <li><a href="#" class="text-white text-decoration-none"><i class="fab fa-instagram fa-lg"></i></a>
+            <li><a href="mailto:devpulse25@gmail.com" class="text-white text-decoration-none"><i
+                  class="fas fa-envelope fa-lg"></i></a>
+          </ul>
+        </div>
+      </div>
+      <div class="linha-neon"></div>
+      <div class="text-center">
+        <p class="mb-0">&copy; 2025 Nome da Empresa. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
 
 
-    <!-- link do js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"></script>
-    <script src="./src/scripts/script.js"></script>
+  <!-- link do js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"></script>
+  <script src="./src/scripts/script.js"></script>
 </body>
 
 </html>

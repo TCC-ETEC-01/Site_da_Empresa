@@ -135,12 +135,6 @@ body{
     
     background-image: url('/src/assets/5.webp');
   }
- 
-
-
-
-
-
 
   .accordion input[type="checkbox"] {
   display: none;
@@ -165,6 +159,18 @@ body{
 }
 
 .accordion input[type="checkbox"]:checked + .accordion-title + .accordion-content {
-  max-height: 100px; /* Ajuste conforme o conteúdo */
+  max-height: 100px; 
   padding: 10px;
 }
+  .card {
+      transition: transform 0.5s ease, opacity 0.5s ease;
+      cursor: pointer;
+    }
+
+    .accordion:hover .card:not(:hover) {
+      opacity: 0.3;
+    }
+
+    .card:hover {
+      transform: scale(1.1);
+    }
