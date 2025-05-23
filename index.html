@@ -16,7 +16,7 @@
 <body>
 
   <!-- Criando a nav do site-->
-  <nav class="navbar  navbar-dark bg-dark" id="inicio">
+  <nav class="navbar  navbar-dark bg-dark pb-5" id="inicio">
     <div class="container">
       <a class="navbar-brand" href="" id="titulo">Dev Pulse</a>
       <button id="btn-nav" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -45,13 +45,9 @@
     </nav>
   </aside>
   <!--Criação do carrossel-->
-  <header class="container text-center text-white">
-    <section id="servicos" class="my-5">
-      <h2>Serviços</h2>
-      <hr class="neon-line" />
-    </section>
+  <header class="container text-center text-white p-5 pt-4">
     <div class="container row">
-      <div class="carousel slide col-lg-6" data-bs-ride="carousel" id="carouselImages" data-bs-touch="false">
+      <div class="carousel slide col-lg-6 pt-5 p-4" data-bs-ride="carousel" id="carouselImages" data-bs-touch="false">
         <div class="carousel-indicators">
           <button class="active" data-bs-target="#carouselImages" data-bs-slide-to="0"></button>
           <button data-bs-target="#carouselImages" data-bs-slide-to="1"></button>
@@ -69,7 +65,7 @@
           </div>
         </div>
       </div>
-      <div class="carousel slide col-lg-6" data-bs-ride="carousel" id="carouselText" data-bs-touch="false">
+      <div class="carousel slide col-lg-6 pt-5 p-4" data-bs-ride="carousel" id="carouselText" data-bs-touch="false">
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="6000">
             <h3 class="titulo">Projeto 1</h3>
@@ -90,7 +86,91 @@
       </div>
     </div>
   </header>
+  <!--sobre nos-->
 
+
+  <br></br>
+  <h2 class="text-center text-white pt-4">Sobre Nós</h2>
+  <div class="ps-5 pe-5 p-2">
+    <hr class="neon-line " />
+  </div>
+  <section class="row row-cols-1 row-cols-lg-2 g-5 mt-4 mb-5 text-white" id="sobre">
+
+    <div class="texto">
+      <div class="texSobre ps-5 pt-3">
+        <p class="pb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ut quod, nobis, totam
+          magni
+          ipsum, iusto
+          ipsam eum dignissimos deserunt illum aliquam possimus consequuntur sint quo libero porro et
+          adipisci sapiente
+          eius recusandae sit maxime quis voluptas. Facere, doloremque illum.</p>
+        <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi et voluptates
+          necessitatibus
+          cumque nam esse laborum. Incidunt officia ratione
+          numquam possimus maiores placeat ea ipsum?</p>
+
+      </div>
+
+    </div>
+    <div class="carousel col-3" data-bs-ride="carousel" data-bs-touch="false" id="carouselImg">
+      <div class="carouser-slide">
+        <div class="carousel-inner ">
+          <div class="carousel-item active" data-bs-interval="6000">
+            <img src="src/assets/Carrossel_SoberNos.jpeg" alt="" class="d-block rounded-3 mx-auto"
+              style="width: 70%; max-height: 300px; object-fit: cover;">
+          </div>
+          <div class="carousel-item " data-bs-interval="6000">
+            <img src="src/assets/Carrossel_SoberNos.jpeg" alt="" class="d-block rounded-3 mx-auto"
+              style="width: 70%; max-height: 300px; object-fit: cover;">
+          </div>
+          <div class="carousel-item " data-bs-interval="6000">
+            <img src="src/assets/Carrossel_SoberNos.jpeg" alt="" class="d-block rounded-3 mx-auto"
+              style="width: 70%; max-height: 300px; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+  <div class="container py-5 imagem-form">
+    <h3 class="text-center mb-5">Contato</h3>
+    <form>
+      <div class="text-center mb-4">
+        <h4>Entre em contato</h4>
+      </div>
+
+      <div class="mb-3 row align-items-center">
+        <label for="Nome" class="col-sm-2 col-form-label text-end">Nome:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="Nome" name="Nome" placeholder="Digite seu nome">
+        </div>
+      </div>
+
+      <div class="mb-3 row align-items-center">
+        <label for="Email" class="col-sm-2 col-form-label text-end">Email:</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="Email" name="Email" placeholder="Digite seu email">
+        </div>
+      </div>
+
+      <div class="mb-4 row">
+        <label for="mensagem" class="col-sm-2 col-form-label text-end">Mensagem:</label>
+        <div class="col-sm-10">
+          <textarea class="form-control" id="mensagem" rows="5" maxlength="200"
+            placeholder="Digite sua mensagem..."></textarea>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary px-5">Enviar</button>
+      </div>
+    </form>
+  </div>
+
+
+  <div>
+    <h1 class="text-white">Cliente</h1>
+  </div>
 
   <h1 class="pt-5 mt-5 text-white text-center">Equipe</h1>
   <div class="ps-5 pe-5 p-2">
@@ -296,52 +376,11 @@
     </div>
   </div>
 
+<div><h2 class="text-white
+  ">Empresas que já trabalhamos
 
-  <!--Sobre nós-->
-  <br></br>
-  <h2 class="text-center text-white">Sobre Nós</h2>
-  <div class="ps-5 pe-5 p-2">
-    <hr class="neon-line " />
-  </div>
-  <section class="row row-cols-1 row-cols-lg-2 g-5 mt-4 mb-5 text-white" id="sobre">
+</h2></div>
 
-    <div class="texto">
-      <div class="texSobre ps-5 pt-3">
-        <p class="pb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ut quod, nobis, totam
-          magni
-          ipsum, iusto
-          ipsam eum dignissimos deserunt illum aliquam possimus consequuntur sint quo libero porro et
-          adipisci sapiente
-          eius recusandae sit maxime quis voluptas. Facere, doloremque illum.</p>
-        <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi et voluptates
-          necessitatibus
-          cumque nam esse laborum. Incidunt officia ratione
-          numquam possimus maiores placeat ea ipsum?</p>
-
-      </div>
-
-    </div>
-    <div class="carousel col-3" data-bs-ride="carousel" data-bs-touch="false" id="carouselImg">
-      <div class="carouser-slide">
-        <div class="carousel-inner ">
-          <div class="carousel-item active" data-bs-interval="6000">
-            <img src="src/assets/Carrossel_SoberNos.jpeg" alt="" class="d-block rounded-3 mx-auto"
-              style="width: 70%; max-height: 300px; object-fit: cover;">
-          </div> <div class="carousel-item " data-bs-interval="6000">
-            <img src="src/assets/Carrossel_SoberNos.jpeg" alt="" class="d-block rounded-3 mx-auto"
-              style="width: 70%; max-height: 300px; object-fit: cover;">
-          </div> <div class="carousel-item " data-bs-interval="6000">
-            <img src="src/assets/Carrossel_SoberNos.jpeg" alt="" class="d-block rounded-3 mx-auto"
-              style="width: 70%; max-height: 300px; object-fit: cover;">
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-  </section>
-
-  </div>
   <br></br>
   <footer class="bg-dark text-white " id="footer">
     <div class="container  p-5">
