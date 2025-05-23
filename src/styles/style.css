@@ -8,19 +8,21 @@ body {
   background: linear-gradient(to right, #051140, #051140);
 
 }
+
 #inicio {
   background-color: #111 !important;
- color: #fff!important;
+  color: #fff !important;
   padding: 20px;
   font-size: 24px;
-  border-radius: 0 0 12px 12px; /* arredonda só o topo */
+  border-radius: 0 0 12px 12px;
+  /* arredonda só o topo */
   border-bottom: 4px solid rgba(0, 255, 255, 0.856);
   box-shadow:
     0 0 10px rgba(0, 255, 255, 0.808),
     0 0 20px rgba(0, 255, 255, 0.808),
     0 0 30px rgba(0, 255, 255, 0.808),
     0 4px 15px rgba(0, 255, 255, 0.808);
-  
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,9 +35,9 @@ body {
 
 /* Botão toggler com borda e glow neon */
 #btn-nav {
-   /*texto no centro*/
-  
- 
+  /*texto no centro*/
+
+
   border: 2px solid #0ff;
   border-radius: 8px;
   box-shadow:
@@ -75,10 +77,12 @@ body {
 
 .sidebar2 .navbar2 {
   visibility: hidden;
+  
 }
 
 .sidebar2 .navbar2 ul {
   list-style: none !important;
+  
 
 }
 
@@ -90,10 +94,13 @@ body {
 }
 
 .sidebar2 .navbar2 ul li a {
- width: 40px !important;
+  
+  width: 40px !important;
   height: 40px !important;
-  background: #111 !important; /* fundo escuro para destacar o neon */
-  color: #0ff !important; /* cor do ícone neon */
+  background: #111 !important;
+  /* fundo escuro para destacar o neon */
+  color: #0ff !important;
+  /* cor do ícone neon */
   border-radius: 50% !important;
   display: flex !important;
   align-items: center !important;
@@ -114,7 +121,7 @@ body {
 
 /* Efeito ao passar o mouse */
 .sidebar2 .navbar2 ul li a:hover {
-    background: #0ff !important;
+  background: #0ff !important;
   color: #111 !important;
 
   /* Glow mais forte no hover */
@@ -126,6 +133,7 @@ body {
 }
 
 .sidebar2 {
+  z-index: 9999; /* bem alto para ficar sempre por cima */
   position: fixed;
 }
 
@@ -289,28 +297,24 @@ body {
   transform: scale(1.1);
 }
 
-#Mensagem
-{
-        width: 300px;      /* Tamanho em pixels */
-      font-size: 16px;   /* Tamanho da fonte, opcional */
-      padding: 8px;
+#Mensagem {
+  width: 300px;
+  /* Tamanho em pixels */
+  font-size: 16px;
+  /* Tamanho da fonte, opcional */
+  padding: 8px;
 }
-.imagem-form {
-  background-image: url('src/assets/este.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 10px;
-  padding: 2rem;
+
+.fundo-fullwidth {
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, #0d237c, #004f7c);
+  z-index: 0;
+  /* fica atrás de pop-ups, tooltips etc */
+  position: relative;
+  /* necessário para o z-index funcionar corretamente */
+  box-shadow:
+    0 0 30px rgba(74, 144, 226, 0.4),
+    0 0 60px rgba(74, 144, 226, 0.3),
+    0 0 90px rgba(74, 144, 226, 0.2);
   color: white;
 }
-
-  /* Para deixar os campos mais visíveis */
-  .form-control, textarea {
-    background-color: rgba(255, 255, 255, 0.8);
-    color: black;
-  }
-
-  label {
-    color: white;
-  }

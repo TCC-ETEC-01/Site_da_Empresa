@@ -112,18 +112,18 @@
       </div>
 
     </div>
-    <div class="carousel col-3" data-bs-ride="carousel" data-bs-touch="false" id="carouselImg">
+    <div class="carousel col-lg-6" data-bs-ride="carousel" data-bs-touch="false" id="carouselImg">
       <div class="carouser-slide">
         <div class="carousel-inner ">
-          <div class="carousel-item active" data-bs-interval="6000">
+          <div class="carousel-item active" data-bs-interval="8000">
             <img src="src/assets/Carrossel_SoberNos.jpeg" alt="" class="d-block rounded-3 mx-auto"
               style="width: 70%; max-height: 300px; object-fit: cover;">
           </div>
-          <div class="carousel-item " data-bs-interval="6000">
+          <div class="carousel-item " data-bs-interval="8000">
             <img src="src/assets/Carrossel_SoberNos.jpeg" alt="" class="d-block rounded-3 mx-auto"
               style="width: 70%; max-height: 300px; object-fit: cover;">
           </div>
-          <div class="carousel-item " data-bs-interval="6000">
+          <div class="carousel-item " data-bs-interval="8000">
             <img src="src/assets/Carrossel_SoberNos.jpeg" alt="" class="d-block rounded-3 mx-auto"
               style="width: 70%; max-height: 300px; object-fit: cover;">
           </div>
@@ -132,45 +132,153 @@
     </div>
   </section>
   </div>
-  <div class="container py-5 imagem-form">
-    <h3 class="text-center mb-5">Contato</h3>
-    <form>
-      <div class="text-center mb-4">
-        <h4>Entre em contato</h4>
-      </div>
 
-      <div class="mb-3 row align-items-center">
-        <label for="Nome" class="col-sm-2 col-form-label text-end">Nome:</label>
-        <div class="col-sm-10">
-          <input type="text" class="form-control" id="Nome" name="Nome" placeholder="Digite seu nome">
+  <!--Contato-->
+
+  <h2 class="text-center text-white pt-5 mb-5">Contato</h2>
+  <div class="fundo-fullwidth" data-aos="fade-right" data-aos-offset="400" data-aos-easing="ease-in-sine">
+    <div class="container text-white">
+      <form>
+        <div class="text-center mb-4">
+          <h4>Entre em contato</h4>
         </div>
-      </div>
 
-      <div class="mb-3 row align-items-center">
-        <label for="Email" class="col-sm-2 col-form-label text-end">Email:</label>
-        <div class="col-sm-10">
-          <input type="email" class="form-control" id="Email" name="Email" placeholder="Digite seu email">
+        <div class="mb-3 row align-items-center">
+          <label for="Nome" class="col-sm-2 col-form-label text-end">Nome:</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="Nome" name="Nome" placeholder="Digite seu nome" />
+          </div>
         </div>
-      </div>
 
-      <div class="mb-4 row">
-        <label for="mensagem" class="col-sm-2 col-form-label text-end">Mensagem:</label>
-        <div class="col-sm-10">
-          <textarea class="form-control" id="mensagem" rows="5" maxlength="200"
-            placeholder="Digite sua mensagem..."></textarea>
+        <div class="mb-3 row align-items-center">
+          <label for="Email" class="col-sm-2 col-form-label text-end">Email:</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="Email" name="Email" placeholder="Digite seu email" />
+          </div>
         </div>
-      </div>
 
-      <div class="text-center">
-        <button type="submit" class="btn btn-primary px-5">Enviar</button>
-      </div>
-    </form>
+        <div class="mb-4 row">
+          <label for="mensagem" class="col-sm-2 col-form-label text-end">Mensagem:</label>
+          <div class="col-sm-10">
+            <textarea class="form-control" id="mensagem" rows="5" maxlength="200"
+              placeholder="Digite sua mensagem..."></textarea>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary px-5">Enviar</button>
+        </div>
+      </form>
+    </div>
   </div>
 
+  <!--Cliente-->
+  <br>
+  <br>
+   <h2 class="text-white text-center p-5 pt-4" data-aos="zoom-in-left" data-aos-offset="200">Clientes</h2>
 
-  <div>
-    <h1 class="text-white">Cliente</h1>
+  <div class="cliente">
+    <div id="carouselCards" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up" data-aos-duration="3000">
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-center gap-4">
+            <div class="card" style="width: 18rem;">
+              <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card 1</h5>
+                <p class="card-text">Algum conteúdo aqui.</p>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card 2</h5>
+                <p class="card-text">Outro conteúdo aqui.</p>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card 3</h5>
+                <p class="card-text">Mais um conteúdo.</p>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card 4</h5>
+                <p class="card-text">E mais outro aqui.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center gap-4">
+            <div class="card" style="width: 18rem;">
+              <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card 5</h5>
+                <p class="card-text">Conteúdo diferente aqui.</p>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card 6</h5>
+                <p class="card-text">Mais conteúdo legal.</p>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card 7</h5>
+                <p class="card-text">Outro texto bacana.</p>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card 8</h5>
+                <p class="card-text">Mais um texto para o card.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controles -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselCards" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselCards" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
   </div>
+
+  <!-- Controles -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselCards" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselCards" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+  </div>
+
+  <!--Equipe-->
+
 
   <h1 class="pt-5 mt-5 text-white text-center">Equipe</h1>
   <div class="ps-5 pe-5 p-2">
@@ -376,10 +484,11 @@
     </div>
   </div>
 
-<div><h2 class="text-white
-  ">Empresas que já trabalhamos
+  <div>
+    <h2 class="text-white">Empresas que já trabalhamos
 
-</h2></div>
+    </h2>
+  </div>
 
   <br></br>
   <footer class="bg-dark text-white " id="footer">
@@ -414,6 +523,13 @@
   </footer>
 
 
+  <!--função do AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!--link doo js AOS-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- link do js -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"></script>
