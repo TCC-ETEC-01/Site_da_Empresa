@@ -1,142 +1,255 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background: linear-gradient(to right,#051140, #051140);
-}
-.navbar{text-align: center!important ;}
+body {
+  background: linear-gradient(to right, #051140, #051140);
 
-.mb-4{
-    text-align: center;
-} 
+}
+#inicio {
+  background-color: #111 !important;
+ color: #fff!important;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 0 0 12px 12px; /* arredonda só o topo */
+  border-bottom: 4px solid rgba(0, 255, 255, 0.856);
+  box-shadow:
+    0 0 10px rgba(0, 255, 255, 0.808),
+    0 0 20px rgba(0, 255, 255, 0.808),
+    0 0 30px rgba(0, 255, 255, 0.808),
+    0 4px 15px rgba(0, 255, 255, 0.808);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#inicio a {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+/* Botão toggler com borda e glow neon */
+#btn-nav {
+   /*texto no centro*/
+  
+ 
+  border: 2px solid #0ff;
+  border-radius: 8px;
+  box-shadow:
+    0 0 5px #0ff,
+    0 0 10px #0ff,
+    0 0 15px #0ff;
+  background-color: transparent;
+  transition: box-shadow 0.3s ease;
+}
+
+#btn-nav:hover {
+  box-shadow:
+    0 0 10px #0ff,
+    0 0 20px #0ff,
+    0 0 30px #0ff,
+    0 0 40px #0ff;
+}
+
+/* Ícone do botão: ajustar cor para neon */
+#btn-nav .navbar-toggler-icon {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
+
+
+.mb-4 {
+  text-align: center;
+}
 
 .linha-neon {
-    width: 100%;
-    height: 4px; 
-    background: linear-gradient(90deg, #00ffff, #ff00ff, #00ffff);
-    border-radius: 10px;
-    animation: move 3s linear infinite;
-    margin-top: 1rem;
-  }
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #00ffff, #ff00ff, #00ffff);
+  border-radius: 10px;
+  animation: move 3s linear infinite;
+  margin-top: 1rem;
+}
 
-  .sidebar2 .navbar2 {
-    visibility: hidden;
+.sidebar2 .navbar2 {
+  visibility: hidden;
 }
 
 .sidebar2 .navbar2 ul {
-    list-style: none !important; 
-  
+  list-style: none !important;
+
 }
 
 /* Estilização dos botões circulares */
-.sidebar2 .navbar2 ul li  {
-    margin: 10px 0 !important; /* Espaçamento entre os ícones */
-    margin-left: -10px !important;
+.sidebar2 .navbar2 ul li {
+  margin: 10px 0 !important;
+  /* Espaçamento entre os ícones */
+  margin-left: -10px !important;
 }
 
 .sidebar2 .navbar2 ul li a {
-    width: 40px !important;
-    height: 40px !important;
-    background: #D3D3D3 !important; /* Cor do fundo do círculo */
-    color: #2E2E3A !important; /* Cor do ícone */
-    border-radius: 50% !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    font-size: 22px !important;
-    transition: 0.3s !important;
-    text-decoration: none !important;
+ width: 40px !important;
+  height: 40px !important;
+  background: #111 !important; /* fundo escuro para destacar o neon */
+  color: #0ff !important; /* cor do ícone neon */
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 22px !important;
+  transition: 0.3s !important;
+  text-decoration: none !important;
+
+  /* Borda neon suave */
+  border: 2px solid #0ff !important;
+
+  /* Glow neon */
+  box-shadow:
+    0 0 5px #0ff,
+    0 0 10px #0ff,
+    0 0 20px #0ff;
 }
 
 /* Efeito ao passar o mouse */
 .sidebar2 .navbar2 ul li a:hover {
-    background: #B0B0B0 !important;
+    background: #0ff !important;
+  color: #111 !important;
+
+  /* Glow mais forte no hover */
+  box-shadow:
+    0 0 10px #0ff,
+    0 0 20px #0ff,
+    0 0 30px #0ff,
+    0 0 40px #0ff;
 }
+
 .sidebar2 {
-    position: fixed;
+  position: fixed;
 }
 
 @media (min-width: 975px) {
-    #btn-nav {
-        visibility:hidden;
-    }
-    .sidebar2 .navbar2 {
-        visibility: visible;
-    }
+  #btn-nav {
+    visibility: hidden;
+  }
+
+  .sidebar2 .navbar2 {
+    visibility: visible;
+  }
 }
 
+.neon-line {
+  border: none;
+  height: 3px;
+  background-color: #0ff;
+  border-radius: 2px;
+
+  /* Glow neon */
+  box-shadow:
+    0 0 5px #0ff,
+    0 0 10px #0ff,
+    0 0 20px #0ff;
+  margin: 20px 0;
+}
+
+
 .equipe {
-    background-color: #0959da;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
-    gap: 30px;
-    border-radius: 10px;
-    width: 90%;
-    margin: 80px auto;
+  background-color: #0959da;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
+  gap: 30px;
+  border-radius: 10px;
+  width: 90%;
+  margin: 80px auto;
 }
 
 .membro {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .info-membro {
-    background: #ffffff;
-    text-align: center;
-    border-radius: 15px;
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    visibility: collapse;
-    font-weight: bold;
+  background: #ffffff;
+  text-align: center;
+  border-radius: 15px;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  visibility: collapse;
+  font-weight: bold;
 }
 
 .avatar {
-    width: 150px;
-    height: 150px;
-    background-color: #b0adad;
-    border-radius: 50%;
-    background-size: 50%;
-    background-repeat: no-repeat;
-    background-position: center;
-    cursor: pointer;
+  width: 150px;
+  height: 150px;
+  background-color: #b0adad;
+  border-radius: 50%;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
 }
-.row { margin-left: 0; margin-right: 0; }
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
 
 
-   .av1 /*Gabriel*/ {
-    
-    background-image: url('/src/assets/2.webp');
-  }
-  .av2 /*Cauan*/ {
-    
-    background-image: url('/src/assets/1.png');
-  }
-  .av3 /*Amanda*/ {
-    
-    background-image: url('/src/assets/6.webp');
-  }
-  .av4 /*Arthur*/ {
-    
-    background-image: url('/src/assets/4.webp');
-  }
-  .av5 /*Gustavo*/ {
-    
-    background-image: url('/src/assets/3.png');
-  }
-  .av6 /*Daniel*/ {
-    
-    background-image: url('/src/assets/5.webp');
-  }
+.av1
 
-  .accordion input[type="checkbox"] {
+/*Gabriel*/
+  {
+
+  background-image: url('/src/assets/2.webp');
+}
+
+.av2
+
+/*Cauan*/
+  {
+
+  background-image: url('/src/assets/1.png');
+}
+
+.av3
+
+/*Amanda*/
+  {
+
+  background-image: url('/src/assets/6.webp');
+}
+
+.av4
+
+/*Arthur*/
+  {
+
+  background-image: url('/src/assets/4.webp');
+}
+
+.av5
+
+/*Gustavo*/
+  {
+
+  background-image: url('/src/assets/3.png');
+}
+
+.av6
+
+/*Daniel*/
+  {
+
+  background-image: url('/src/assets/5.webp');
+}
+
+.accordion input[type="checkbox"] {
   display: none;
 }
 
@@ -158,19 +271,22 @@ body{
   padding: 0 10px;
 }
 
-.accordion input[type="checkbox"]:checked + .accordion-title + .accordion-content {
-  max-height: 100px; 
+.accordion input[type="checkbox"]:checked+.accordion-title+.accordion-content {
+  max-height: 100px;
   padding: 10px;
 }
-  .card {
-      transition: transform 0.5s ease, opacity 0.5s ease;
-      cursor: pointer;
-    }
 
-    .accordion:hover .card:not(:hover) {
-      opacity: 0.3;
-    }
+.card {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  cursor: pointer;
+}
 
-    .card:hover {
-      transform: scale(1.1);
-    }
+.accordion:hover .card:not(:hover) {
+  opacity: 0.3;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+

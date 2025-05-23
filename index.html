@@ -14,6 +14,7 @@
 </head>
 
 <body>
+
   <!-- Criando a nav do site-->
   <nav class="navbar  navbar-dark bg-dark" id="inicio">
     <div class="container">
@@ -22,7 +23,7 @@
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse align-items-center" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
           <li class="nav-item"><a class="nav-link" href="#equipe">Equipe</a></li>
@@ -34,7 +35,7 @@
   </nav>
   <!--Crianção das referencias-->
   <aside class="sidebar2">
-    <nav class="navbar2">
+    <nav class="navbar2 p-4">
       <ul>
         <li><a href="#inicio"><i class="fas fa-home"></i></a></li>
         <li><a href="#equipe"><i class="fas fa-users"></i></a></li>
@@ -47,6 +48,7 @@
   <header class="container text-center text-white">
     <section id="servicos" class="my-5">
       <h2>Serviços</h2>
+      <hr class="neon-line" />
     </section>
     <div class="container row">
       <div class="carousel slide col-lg-6" data-bs-ride="carousel" id="carouselImages" data-bs-touch="false">
@@ -90,24 +92,29 @@
   </header>
 
 
-  <h1 class="p-5 mt-5 text-white text-center">Equipe</h1>
-
-  <div class="container text-center p-2" id="equipe">
-    <div class="accordion">
-      <div class="row row-cols-2 row-cols-lg-3 g-3 p-3">
+  <h1 class="pt-5 mt-5 text-white text-center">Equipe</h1>
+  <div class="ps-5 pe-5 p-2">
+    <hr class="neon-line " />
+  </div>
+  <div class="container text-center p-2 pt-4" id="equipe">
+    <div class="accordion ">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 p-3  ">
 
         <!-- Cauã -->
         <div class="col">
-          <div class="card">
-            <img class="cadr img p-3 mx-auto d-block" src="src/assets/Foto_Equipe_Caua.jpeg" alt="" style="height: 387px; width: 330px;">
-            <input type="checkbox" class="item1" id="item1_cauan">
-            <label for="item1_cauan" class="accordion-title">Cauã</label>
-            <div class="accordion-content">
-              <h5 class="card title">Desenvolvedor Full Stack</h5>
-              <p class="cadr text pb-2">Atua na construção do front-end e back-end.</p>
-            </div>
-            <div class="bot text-center pt-3 pb-2">
-              <button class="btn rounded-pill btn-primary col-6 btnToast">Contato</button>
+          <div class="card h-100">
+            <img class="card-img-top img-fluid p-3 mx-auto d-block" src="src/assets/Foto_Equipe_Caua.jpeg"
+              alt="Foto Cauã">
+            <div class="card-body">
+              <input type="checkbox" class="item1" id="item1_cauan">
+              <label for="item1_cauan" class="accordion-title h5">Cauã</label>
+              <div class="accordion-content">
+                <h5 class="card-title">Desenvolvedor Full Stack</h5>
+                <p class="card-text">Atua na construção do front-end e back-end.</p>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-primary rounded-pill col-6 btnToast">Contato</button>
+              </div>
             </div>
             <div class="toast-container position-fixed top-0 end-0 p-3 toastContainer">
               <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
@@ -117,10 +124,8 @@
                   <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Fechar"></button>
                 </div>
                 <div class="toast-body">
-                  <pre>Telefone:</pre>
-                  <a href="https://wa.me/551196918-7486" target="_blank">55 (11) 96918-7486</a>
-                  <pre>E-mail:</pre>
-                  <a href="mailto:dev.cauaraphael@gmail.com">dev.cauaraphael@gmail.com</a>
+                  <p>Telefone: <a href="https://wa.me/5511969187486" target="_blank">(11) 96918-7486</a></p>
+                  <p>E-mail: <a href="mailto:dev.cauaraphael@gmail.com">dev.cauaraphael@gmail.com</a></p>
                 </div>
               </div>
             </div>
@@ -129,29 +134,30 @@
 
         <!-- Gustavo Coról -->
         <div class="col">
-          <div class="card">
-            <img class="cadr img p-3 mx-auto d-block" src="src/assets/Foto_Equipe_Corol.jpeg" alt="" style="height: 387px; width: 330px;">
-            <input type="checkbox" class="item1" id="item1_gustavo_co">
-            <label for="item1_gustavo_co" class="accordion-title">Gustavo Coról</label>
-            <div class="accordion-content">
-              <h5 class="card title">Desenvolvedor Full Stack</h5>
-              <p class="cadr text pb-2">Atua na construção do front-end e back-end.</p>
-            </div>
-            <div class="bot text-center pt-3 pb-2">
-              <button class="btn rounded-pill btn-primary col-6 btnToast">Contato</button>
+          <div class="card h-100">
+            <img class="card-img-top img-fluid p-3 mx-auto d-block" src="src/assets/Foto_Equipe_Corol.jpeg"
+              alt="Foto Gustavo Coról">
+            <div class="card-body">
+              <input type="checkbox" class="item1" id="item1_gustavo_co">
+              <label for="item1_gustavo_co" class="accordion-title h5">Gustavo Coról</label>
+              <div class="accordion-content">
+                <h5 class="card-title">Analista de Sistema</h5>
+                <p class="card-text">Responsável por mapear requisitos.</p>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-primary rounded-pill col-6 btnToast">Contato</button>
+              </div>
             </div>
             <div class="toast-container position-fixed top-0 end-0 p-3 toastContainer">
               <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
                 <div class="toast-header">
-                  <strong class="me-auto">Desenvolvedor Full Stack</strong>
+                  <strong class="me-auto">Analista de Sistema</strong>
                   <small class="text-muted">agora mesmo</small>
                   <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Fechar"></button>
                 </div>
                 <div class="toast-body">
-                  <pre>Telefone:</pre>
-                  <a href="https://wa.me/551198288-2206" target="_blank">55 (11) 98288-2206</a>
-                  <pre>E-mail:</pre>
-                  <a href="mailto:gabrielcorolleite@gmail.com">gabrielcorolleite@gmail.com</a>
+                  <p>Telefone: <a href="https://wa.me/5511982882206" target="_blank">(11) 98288-2206</a></p>
+                  <p>E-mail: <a href="mailto:gabrielcorolleite@gmail.com">gabrielcorolleite@gmail.com</a></p>
                 </div>
               </div>
             </div>
@@ -160,16 +166,19 @@
 
         <!-- Gustavo Lima -->
         <div class="col">
-          <div class="card">
-            <img class="cadr img p-3 mx-auto d-block" src="https://picsum.photos/400/400?random=3" alt="" style="height: 387px; width: 330px;">
-            <input type="checkbox" class="item1" id="item1_gustavo_lima">
-            <label for="item1_gustavo_lima" class="accordion-title">Gustavo Lima</label>
-            <div class="accordion-content">
-              <h5 class="card title">Desenvolvedor Full Stack</h5>
-              <p class="cadr text pb-2">Atua na construção do front-end e back-end.</p>
-            </div>
-            <div class="bot text-center pt-3 pb-2">
-              <button class="btn rounded-pill btn-primary col-6 btnToast">Contato</button>
+          <div class="card h-100">
+            <img class="card-img-top img-fluid p-3 mx-auto d-block" src="https://picsum.photos/400/400?random=3"
+              alt="Foto Gustavo Lima">
+            <div class="card-body">
+              <input type="checkbox" class="item1" id="item1_gustavo_lima">
+              <label for="item1_gustavo_lima" class="accordion-title h5">Gustavo Lima</label>
+              <div class="accordion-content">
+                <h5 class="card-title">Desenvolvedor Full Stack</h5>
+                <p class="card-text">Atua na construção do front-end e back-end.</p>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-primary rounded-pill col-6 btnToast">Contato</button>
+              </div>
             </div>
             <div class="toast-container position-fixed top-0 end-0 p-3 toastContainer">
               <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
@@ -179,10 +188,8 @@
                   <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Fechar"></button>
                 </div>
                 <div class="toast-body">
-                  <pre>Telefone:</pre>
-                  <a href="https://wa.me/551193031-4180" target="_blank">55 (11) 93031-4180</a>
-                  <pre>E-mail:</pre>
-                  <a href="mailto:slima.gusta@gmail.com">slima.gusta@gmail.com</a>
+                  <p>Telefone: <a href="https://wa.me/5511930314180" target="_blank">(11) 93031-4180</a></p>
+                  <p>E-mail: <a href="mailto:slima.gusta@gmail.com">slima.gusta@gmail.com</a></p>
                 </div>
               </div>
             </div>
@@ -191,16 +198,19 @@
 
         <!-- Arthur Romão -->
         <div class="col">
-          <div class="card">
-            <img class="cadr img p-3 mx-auto d-block" src="https://picsum.photos/400/400?random=4" alt="" style="height: 387px; width: 330px;">
-            <input type="checkbox" class="item1" id="item1_arthur">
-            <label for="item1_arthur" class="accordion-title">Arthur Romão</label>
-            <div class="accordion-content">
-              <h5 class="card title">Desenvolvedor Full Stack</h5>
-              <p class="cadr text pb-2">Atua na construção do front-end e back-end.</p>
-            </div>
-            <div class="bot text-center pt-3 pb-2">
-              <button class="btn rounded-pill btn-primary col-6 btnToast">Contato</button>
+          <div class="card h-100">
+            <img class="card-img-top img-fluid p-3 mx-auto d-block" src="https://picsum.photos/400/400?random=4"
+              alt="Foto Arthur Romão">
+            <div class="card-body">
+              <input type="checkbox" class="item1" id="item1_arthur">
+              <label for="item1_arthur" class="accordion-title h5">Arthur Romão</label>
+              <div class="accordion-content">
+                <h5 class="card-title">Desenvolvedor Full Stack</h5>
+                <p class="card-text">Atua na construção do front-end e back-end.</p>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-primary rounded-pill col-6 btnToast">Contato</button>
+              </div>
             </div>
             <div class="toast-container position-fixed top-0 end-0 p-3 toastContainer">
               <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
@@ -210,10 +220,8 @@
                   <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Fechar"></button>
                 </div>
                 <div class="toast-body">
-                  <pre>Telefone:</pre>
-                  <a href="https://wa.me/5511967639585" target="_blank">55 (11) 97326-6983</a>
-                  <pre>E-mail:</pre>
-                  <a href="mailto:joaocardoso981@gmail.com">joaocardoso981@gmail.com</a>
+                  <p>Telefone: <a href="https://wa.me/5511967639585" target="_blank">(11) 97326-6983</a></p>
+                  <p>E-mail: <a href="mailto:joaocardoso981@gmail.com">joaocardoso981@gmail.com</a></p>
                 </div>
               </div>
             </div>
@@ -222,29 +230,30 @@
 
         <!-- Amanda Pereira -->
         <div class="col">
-          <div class="card">
-            <img class="cadr img p-3 mx-auto d-block" src="src/assets/Foto_Equipe_Amanda.jpeg" alt="" style="height: 387px; width: 330px;">
-            <input type="checkbox" class="item1" id="item1_amanda">
-            <label for="item1_amanda" class="accordion-title">Amanda Pereira</label>
-            <div class="accordion-content">
-              <h5 class="card title">Desenvolvedor Full Stack</h5>
-              <p class="cadr text pb-2">Atua na construção do front-end e back-end.</p>
-            </div>
-            <div class="bot text-center pt-3 pb-2">
-              <button class="btn rounded-pill btn-primary col-6 btnToast">Contato</button>
+          <div class="card h-100">
+            <img class="card-img-top img-fluid p-3 mx-auto d-block" src="src/assets/Foto_Equipe_Amanda.jpeg"
+              alt="Foto Amanda Pereira">
+            <div class="card-body">
+              <input type="checkbox" class="item1" id="item1_amanda">
+              <label for="item1_amanda" class="accordion-title h5">Amanda Pereira</label>
+              <div class="accordion-content">
+                <h5 class="card-title">Desenvolvedora Full Stack</h5>
+                <p class="card-text">Atua na construção do front-end e back-end.</p>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-primary rounded-pill col-6 btnToast">Contato</button>
+              </div>
             </div>
             <div class="toast-container position-fixed top-0 end-0 p-3 toastContainer">
               <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
                 <div class="toast-header">
-                  <strong class="me-auto">Desenvolvedor Full Stack</strong>
+                  <strong class="me-auto">Desenvolvedora Full Stack</strong>
                   <small class="text-muted">agora mesmo</small>
                   <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Fechar"></button>
                 </div>
                 <div class="toast-body">
-                  <pre>Telefone:</pre>
-                  <a href="https://wa.me/5511967639585" target="_blank">55 (11) 96763-9585</a>
-                  <pre>E-mail:</pre>
-                  <a href="mailto:amandapcardoso981@gmail.com">amandapcardoso981@gmail.com</a>
+                  <p>Telefone: <a href="https://wa.me/5511967639585" target="_blank">(11) 96763-9585</a></p>
+                  <p>E-mail: <a href="mailto:amandapcardoso981@gmail.com">amandapcardoso981@gmail.com</a></p>
                 </div>
               </div>
             </div>
@@ -253,16 +262,19 @@
 
         <!-- Daniel Sobral -->
         <div class="col">
-          <div class="card">
-            <img class="cadr img p-3 mx-auto d-block" src="https://picsum.photos/400/400?random=6" alt="" style="height: 387px; width: 330px;">
-            <input type="checkbox" class="item1" id="item1_daniel">
-            <label for="item1_daniel" class="accordion-title">Daniel Sobral</label>
-            <div class="accordion-content">
-              <h5 class="card title">Desenvolvedor Full Stack</h5>
-              <p class="cadr text pb-2">Atua na construção do front-end e back-end.</p>
-            </div>
-            <div class="bot text-center pt-3 pb-2">
-              <button class="btn rounded-pill btn-primary col-6 btnToast">Contato</button>
+          <div class="card h-100">
+            <img class="card-img-top img-fluid p-3 mx-auto d-block" src="https://picsum.photos/400/400?random=6"
+              alt="Foto Daniel Sobral">
+            <div class="card-body">
+              <input type="checkbox" class="item1" id="item1_daniel">
+              <label for="item1_daniel" class="accordion-title h5">Daniel Sobral</label>
+              <div class="accordion-content">
+                <h5 class="card-title">Desenvolvedor Full Stack</h5>
+                <p class="card-text">Atua na construção do front-end e back-end.</p>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-primary rounded-pill col-6 btnToast">Contato</button>
+              </div>
             </div>
             <div class="toast-container position-fixed top-0 end-0 p-3 toastContainer">
               <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
@@ -272,10 +284,8 @@
                   <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Fechar"></button>
                 </div>
                 <div class="toast-body">
-                  <pre>Telefone:</pre>
-                  <a href="https://wa.me/551198238-3817" target="_blank">55 11 98238-3817</a>
-                  <pre>E-mail:</pre>
-                  <a href="mailto:danielsobraldev@gmail.com">danielsobraldev@gmail.com</a>
+                  <p>Telefone: <a href="https://wa.me/5511982383817" target="_blank">(11) 98238-3817</a></p>
+                  <p>E-mail: <a href="mailto:danielsobraldev@gmail.com">danielsobraldev@gmail.com</a></p>
                 </div>
               </div>
             </div>
@@ -286,13 +296,17 @@
     </div>
   </div>
 
+
   <!--Sobre nós-->
   <br></br>
-  <h2 class="mb-4 text-white">Sobre Nós</h2>
+  <h2 class="text-center text-white">Sobre Nós</h2>
+  <div class="ps-5 pe-5 p-2">
+    <hr class="neon-line " />
+  </div>
   <section class="row row-cols-1 row-cols-lg-2 g-5 mt-4 mb-5 text-white" id="sobre">
 
     <div class="texto">
-      <div class="texSobre ps-5 pt-4">
+      <div class="texSobre ps-5 pt-3">
         <p class="pb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ut quod, nobis, totam
           magni
           ipsum, iusto
@@ -307,17 +321,18 @@
       </div>
 
     </div>
-    <div class="carousel row" data-bs-ride="carousel" data-bs-touch="false" id="carouselImg">
+    <div class="carousel col-3" data-bs-ride="carousel" data-bs-touch="false" id="carouselImg">
       <div class="carouser-slide">
         <div class="carousel-inner ">
           <div class="carousel-item active" data-bs-interval="6000">
-            <img src="https://picsum.photos/1280/420?random=1" alt="" class="d-block w-100 rounded-3">
-          </div>
-          <div class="carousel-item" data-bs-interval="6000">
-            <img src="https://picsum.photos/1280/420?random=2" alt="" class="d-block w-100 rounded-3">
-          </div>
-          <div class="carousel-item" data-bs-interval="6000">
-            <img src="https://picsum.photos/1280/420?random=3" alt="" class="d-block w-100 rounded-3">
+            <img src="src/assets/Carrossel_SoberNos.jpeg" alt="" class="d-block rounded-3 mx-auto"
+              style="width: 70%; max-height: 300px; object-fit: cover;">
+          </div> <div class="carousel-item " data-bs-interval="6000">
+            <img src="src/assets/Carrossel_SoberNos.jpeg" alt="" class="d-block rounded-3 mx-auto"
+              style="width: 70%; max-height: 300px; object-fit: cover;">
+          </div> <div class="carousel-item " data-bs-interval="6000">
+            <img src="src/assets/Carrossel_SoberNos.jpeg" alt="" class="d-block rounded-3 mx-auto"
+              style="width: 70%; max-height: 300px; object-fit: cover;">
           </div>
         </div>
       </div>

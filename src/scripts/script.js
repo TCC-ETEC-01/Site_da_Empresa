@@ -59,3 +59,4 @@ document.querySelectorAll(".btnToast").forEach((btn) => {
 
 const carouselImg = document.getElementById('carouselImg');
 const bsCarouselImg = new bootstrap.Carousel(carouselImg);
+
