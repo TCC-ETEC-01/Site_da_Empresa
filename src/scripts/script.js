@@ -39,23 +39,34 @@ avatares.forEach(avatar => {
   });
 });
 
-//contato da equipe "pessoa 1"
-document.querySelectorAll(".btnToast").forEach((btn) => {
-  btn.addEventListener("click", () => {
-    const card = btn.closest(".card");
-    const toast = card.querySelector(".toast");
-    const container = card.querySelector(".toastContainer");
+    document.querySelectorAll(".btnToast").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const card = btn.closest(".card");
+        const toastEl = card.querySelector(".toast");
 
-    const novoToast = toast.cloneNode(true);
-    novoToast.querySelector(".toast-body").innerHTML += `<hr><small>${new Date().toLocaleString()}</small>`;
+        let bsToast = bootstrap.Toast.getInstance(toastEl);
+        if (!bsToast) {
+          bsToast = new bootstrap.Toast(toastEl);
+        }
 
-    container.appendChild(novoToast);
+        bsToast.show();
+      });
+    });
 
-    const bsToast = new bootstrap.Toast(novoToast);
-    bsToast.show();
-  });
-});
+    document.addEventListener("click", (event) => {
+      document.querySelectorAll(".toast.show").forEach((toastEl) => {
+        const card = toastEl.closest(".card");
+        const btnToast = card.querySelector(".btnToast");
 
+        if (
+          !toastEl.contains(event.target) &&
+          !btnToast.contains(event.target)
+        ) {
+          const bsToast = bootstrap.Toast.getInstance(toastEl);
+          if (bsToast) bsToast.hide();
+        }
+      });
+    });
 
 const carouselImg = document.getElementById('carouselImg');
 const bsCarouselImg = new bootstrap.Carousel(carouselImg);

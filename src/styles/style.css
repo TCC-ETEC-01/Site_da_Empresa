@@ -109,8 +109,7 @@ body {
   transition: 0.3s !important;
   text-decoration: none !important;
 
-  /* Borda neon suave */
-  border: 2px solid #0ff !important;
+ 
 
   /* Glow neon */
   box-shadow:
@@ -207,56 +206,55 @@ body {
   margin-left: 0;
   margin-right: 0;
 }
+   .accordion input[type="checkbox"] {
+      display: none;
+    }
 
+    .accordion-title {
+      display: block;
+      background: #007bff;
+      color: white;
+      padding: 10px;
+      cursor: pointer;
+      margin-top: 5px;
+      border-radius: 4px;
+    }
 
-.av1
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      background: #f1f1f1;
+      transition: max-height 0.3s ease-out;
+      padding: 0 10px;
+    }
 
-/*Gabriel*/
-  {
+    .accordion input[type="checkbox"]:checked + .accordion-title + .accordion-content {
+      max-height: 100px;
+      padding: 10px;
+    }
 
-  background-image: url('/src/assets/2.webp');
-}
+    .card {
+      transition: transform 0.5s ease, opacity 0.5s ease;
+      cursor: pointer;
+      position: relative;
+    }
 
-.av2
+    .accordion:hover .card:not(:hover) {
+      opacity: 0.3;
+    }
 
-/*Cauan*/
-  {
+    .card:hover {
+      transform: scale(1.1);
+    }
 
-  background-image: url('/src/assets/1.png');
-}
-
-.av3
-
-/*Amanda*/
-  {
-
-  background-image: url('/src/assets/6.webp');
-}
-
-.av4
-
-/*Arthur*/
-  {
-
-  background-image: url('/src/assets/4.webp');
-}
-
-.av5
-
-/*Gustavo*/
-  {
-
-  background-image: url('/src/assets/3.png');
-}
-
-.av6
-
-/*Daniel*/
-  {
-
-  background-image: url('/src/assets/5.webp');
-}
-
+    /* Ajuste do toast dentro do card */
+    .toast-container {
+      position: absolute !important;
+      top: 0;
+      right: 0;
+      z-index: 1055;
+      padding: 0.75rem;
+    }
 .accordion input[type="checkbox"] {
   display: none;
 }
@@ -317,4 +315,53 @@ body {
     0 0 60px rgba(74, 144, 226, 0.3),
     0 0 90px rgba(74, 144, 226, 0.2);
   color: white;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 18rem;
+  height: 24rem;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.flip-card-front {
+  background-color: #000;
+}
+
+.flip-card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flip-card-back {
+  background-color: #1a1a2e;
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
 }
