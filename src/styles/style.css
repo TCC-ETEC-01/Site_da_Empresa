@@ -131,9 +131,12 @@ body {
     0 0 40px #0ff;
 }
 
+
+
 .sidebar2 {
-  z-index: 9999; /* bem alto para ficar sempre por cima */
-  position: fixed;
+  z-index: 1000; /* bem alto para ficar sempre por cima */
+  position: fixed;  
+
 }
 
 @media (min-width: 975px) {
@@ -365,3 +368,10 @@ body {
   justify-content: center;
   padding: 1rem;
 }
+
+.img-equal {
+  height: 300px;
+  object-fit: cover;
+  width: 100%;
+}
+
