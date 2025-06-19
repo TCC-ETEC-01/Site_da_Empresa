@@ -10,7 +10,7 @@ body {
 }
 
 #inicio {
-  background-color: #2b578c !important;
+  background-color: #101c2a !important;
   color: #fff !important;
   padding: 20px;
   font-size: 24px;
@@ -40,13 +40,11 @@ body {
 
   border: 2px solid #0ff;
   border-radius: 8px;
-  box-shadow:
-    0 0 5px #0ff,
-    0 0 10px #0ff,
-    0 0 15px #0ff;
   background-color: transparent;
   transition: box-shadow 0.3s ease;
+  color: white;
 }
+
 
 #btn-nav:hover {
   box-shadow:
